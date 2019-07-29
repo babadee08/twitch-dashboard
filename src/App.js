@@ -31,10 +31,12 @@ function App() {
         <h1>Start Editing</h1>
         <h2>This is a setup application</h2>
       </div> */}
-      <Header />
-      <Route exact path="/" component={Games} />
-      <Route exact path="/top-streams" component={Streams} />
-      <Route exact path="/game/:id" component={GameStreams} />
+      <div className="App container-fluid">
+        <Header />
+        <Route exact path="/" component={Games} />
+        <Route exact path="/top-streams" component={Streams} />
+        <Route exact path="/game/:id" component={GameStreams} />
+      </div>
     </Router>
   );
 }

@@ -40,7 +40,7 @@ export default function GameStreams({match, location}) {
                 {streamData.map(stream => (
                 <div className="col-lg-4 col-md-6 col-sm-12 mt-5">
                     <div className="card">
-                    <img className="card-img-top" src={stream.thumbnail_url} />
+                    <img className="card-img-top" src={stream.thumbnail_url} alt="" />
                     <div className="card-body">
                         <h5 className="card-title">{stream.user_name}</h5>
                         <div className="card-text">
@@ -51,6 +51,7 @@ export default function GameStreams({match, location}) {
                             className="link"
                             href={"https://twitch.tv/" + stream.user_name}
                             target="_blank"
+                            rel="noopener noreferrer"
                         >
                             watch {stream.user_name}'s channel
                         </a>
