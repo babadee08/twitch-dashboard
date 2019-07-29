@@ -1,9 +1,10 @@
 import React from 'react';
 // import logo from './logo.svg';
-import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
+import {BrowserRouter as Router, Route} from 'react-router-dom';
 import Games from './components/Games';
 import Streams from './components/Streams';
 import Header from './components/Header';
+import GameStreams from './components/GameStreams';
 
 import './App.css';
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -33,6 +34,7 @@ function App() {
       <Header />
       <Route exact path="/" component={Games} />
       <Route exact path="/top-streams" component={Streams} />
+      <Route exact path="/game/:id" component={GameStreams} />
     </Router>
   );
 }

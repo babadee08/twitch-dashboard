@@ -2,7 +2,7 @@ import axios from 'axios';
 
 let api = axios.create({
     headers: {
-        'Client-ID': process.env.REACT_TWITCH_CLIENT_ID
+        'Client-ID': process.env.REACT_APP_TWITCH_CLIENT_ID
     }
 });
 

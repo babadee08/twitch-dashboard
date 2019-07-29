@@ -1,7 +1,15 @@
 .App {
+  font-family: sans-serif;
   text-align: center;
 }
 
+.link {
+  color: #fff;
+}
+
+.link:hover {
+  color: #fff;
+}
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
